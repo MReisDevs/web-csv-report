@@ -4,41 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>CSV Report - <%= account.name %></title>
+    <title>CSV Report - <%= params[:name] %></title>
     <link rel="stylesheet" href="/stylesheet.css" type="text/css">
   </head>
   <body>
-    <h1>Account: <%= account.name %></h1>
-    <h2>Balance: <%= account.balance %></h2>
-    <table>
-      <tr>
-        <th>Category</th>
-        <th>Total</th>
-        <th>Average</th>
-      </tr>
-      <% account.transactions.each_key do |category| %>
-      <tr>
-        <td><%= category %></td>
-        <td><%= account.category_total(category) %></td>
-        <td><%= account.category_average(category) %></td>
-      </tr>
-      <% end %>
-    </table>
-
-    <h2>Update Account:</h2>
-    <form action="" method="post">
-      <input type="hidden" name="name" value="<%= account.name %>">
-      <input type="text" name="category" placeholder="Category" required><br>
-      <input type="text" name="payee" placeholder="Payee" required><br>
-      <input type="text" name="amount" placeholder="Amount" required><br>
-      <select>
-      <option value="in">Input</option>
-      <option value="out">Output</option>
-      </select>
-      <input type="submit" value="Submit">
-    </form>
-
+    <h1>Account: <%= params[:name]%></h1>
+    <h2>Balance:</h2>
     <a href="/">Home</a>
-
   </body>
 </html>

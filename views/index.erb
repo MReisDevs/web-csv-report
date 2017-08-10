@@ -4,23 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>CSV Report - Home</title>
+    <title>CSV Access Index</title>
     <link rel="stylesheet" href="/stylesheet.css" type="text/css">
   </head>
   <body>
     <header>
-      <% if LoggedIn %>
-      <a href="/login">Log In</a>
-      <% else %>
-      <a href="/logout">Log Out</a>
-      <% end %>
+   
     </header>
     <h1>Please choose a report to view:</h1>
     <ul>
-      <li><a href="/full">Full Report</a></li>
-      <% accounts.each do |account| %>
-      <li><a href="/account?name=<%= account.name %>"><%= account.name %></a></li>
-      <% end %>
+      <li><a href="/fullrpt">Full Report</a></li>
+      <li><a href="/account?name=Priya">Priya</a></li>
+      <li><a href="/account?name=Sonia">Sonia</a></li>
     </ul>
   </body>
 </html>
