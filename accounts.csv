@@ -1,0 +1,48 @@
+Account,Date,Payee,Category,Outflow,Inflow
+Priya,1/1/2017,STARTING BALANCE,Allowance,$0.00,$5000.00
+Sonia,1/1/2017,STARTING BALANCE,Allowance,$0.00,$3800.00
+Priya,1/9/2017,ACME AUTO REPAIR,Car Repairs,$4.91,$0.00
+Priya,1/4/2017,ACME LANDLORD,Rent,$800.43,$0.00
+Priya,1/16/2017,ALAMO DRAFTHOUSE,Entertainment,$27.62,$0.00
+Priya,1/10/2017,APPLEBEE'S,Entertainment,$100.00,$0.00
+Sonia,1/10/2017,BIG LOTS,Household Goods,$29.43,$0.00
+Priya,1/8/2017,BP,Fuel,$33.92,$0.00
+Sonia,1/11/2017,CHECK DEPOSIT,Allowance,$0.00,$200.00
+Sonia,1/10/2017,GOODWILL INDUSTRIES,Clothes,$20.59,$0.00
+Priya,1/9/2017,KRUG PARK,Entertainment,$10.00,$0.00
+Priya,1/5/2017,LE QUARTIER BAKING,Groceries,$6.33,$0.00
+Priya,1/8/2017,LEO'S DINER,Meals,$18.11,$0.00
+Priya,1/8/2017,LOT 2,Entertainment,$24.74,$0.00
+Sonia,1/6/2017,LYFT,Entertainment,$8.37,$0.00
+Priya,1/6/2017,MAX I WALKER,Clothes,$58.10,$0.00
+Priya,1/10/2017,METRO COMMUNITY COLLEGE,Education,$72.99,$0.00
+Sonia,1/6/2017,MUD OMAHA,Utilities,$160.85,$0.00
+Sonia,1/9/2017,NATURAL GROCERS,Groceries,$82.38,$0.00
+Priya,1/5/2017,NET FOUNDATIONS,Donations,$5.00,$0.00
+Priya,1/3/2017,NETFLIX,Utilities,$11.99,$0.00
+Priya,1/10/2017,OMAHA METER PARKING,Entertainment,$3.75,$0.00
+Priya,1/10/2017,OMAHA METER PARKING,Entertainment,$1.25,$0.00
+Sonia,1/6/2017,OMAHA PUBLIC LIBRARY,Education,$140.00,$0.00
+Priya,1/15/2017,OMAHA PUBLIC LIBRARY,Education,$45.78,$0.00
+Priya,1/5/2017,OMAHA PUBLIC LIBRARY,Education,$1.25,$0.00
+Sonia,1/15/2017,PATRICK'S MARKET,Groceries,$5.42,$0.00
+Sonia,1/13/2017,PATRICK'S MARKET,Groceries,$4.29,$0.00
+Sonia,1/8/2017,PATRICK'S MARKET,Groceries,$10.40,$0.00
+Priya,1/15/2017,PATRICK'S MARKET,Groceries,$105.32,$0.00
+Sonia,1/11/2017,PATRICK'S MARKET,Groceries,$132.93,$0.00
+Sonia,1/12/2017,PATRICK'S MARKET,Groceries,$27.90,$0.00
+Sonia,1/13/2017,TARGET,Gifts,$9.99,$0.00
+Priya,1/5/2017,TARGET,Gifts,$162.37,$0.00
+Priya,1/5/2017,TARGET,Gifts,$156.72,$0.00
+Priya,1/5/2017,TARGET,Gifts,$92.64,$0.00
+Sonia,1/15/2017,TARGET,Household Goods,$0.00,$45.55
+Sonia,1/9/2017,TARGET,Household Goods,$125.92,$0.00
+Sonia,1/10/2017,TARGET,Household Goods,$4.82,$0.00
+Sonia,1/4/2017,TARGET,Groceries,$13.96,$0.00
+Sonia,1/8/2017,THE HOMY INN,Entertainment,$30.50,$0.00
+Sonia,1/3/2017,THE PINNACLE FITNESS CLUB,Gym,$48.15,$0.00
+Sonia,1/12/2017,THE SALVATION ARMY,Clothes,$25.35,$0.00
+Sonia,1/9/2017,THE UPS STORE,Gifts,$40.03,$0.00
+Sonia,1/15/2017,WALGREENS,Medical/Dental,$0.00,$41.25
+Sonia,1/11/2017,WALGREENS,Medical/Dental,$52.68,$0.00
+Sonia,1/11/2017,WALGREENS,Medical/Dental,$18.08,$0.00
