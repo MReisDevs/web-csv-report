@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>CSV Report - <%= params[:name] %></title>
+    <title>CSV Report - <%= name %></title>
     <link rel="stylesheet" href="/stylesheet.css" type="text/css">
   </head>
   <body>
-    <h1>Account: <%= params[:name]%></h1>
-    <h2>Balance:</h2>
+    <h1>Account: <%= name %></h1>
+    <h2>Balance: $ <%= info[:tally].round(2) %> </h2>
+  <table>
+     <tr>
+      <th> Category </th>
+      <th> Total Change </th>
+      <th> Average Transaction </th>
+    </tr>
+      <% info[:categories].each do |category, c_info| %>
+    <tr>
+      <td> <%= category %> </td>
+      <td> $<%= c_info[:tally].round(2).to_s.ljust(10) %> </td>
+      <td> $<%= c_info[:average_transaction_cost].round(2).to_s.ljust(20) %> </td>
+    </tr>
+    <% end %>
+  </table>
     <a href="/">Home</a>
   </body>
 </html>
