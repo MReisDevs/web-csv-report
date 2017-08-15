@@ -12,7 +12,7 @@
     <% accounts.each do |name, info| %>
     <table>
     <tr>
-      <th colspan="3">Account: <%= name %> Balance: <%=info[:tally].round(2)%></th>
+      <th colspan="3">Account: <%= name %> Balance: $<%=info[:tally].round(2)%></th>
     </tr>
     <tr>
       <th> Category </th>
@@ -22,8 +22,8 @@
       <% info[:categories].each do |category, c_info| %>
     <tr>
       <td> <%= category %> </td>
-      <td> <%= c_info[:tally].round(2).to_s.ljust(10) %> </td>
-      <td> <%= c_info[:average_transaction_cost].round(2).to_s.ljust(20) %> </td>
+      <td> $<%= c_info[:tally].round(2).to_s.ljust(10) %> </td>
+      <td> $<%= c_info[:average_transaction_cost].round(2).to_s.ljust(20) %> </td>
     </tr>
     <% end %>
     </table>

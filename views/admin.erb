@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CSV Report - Admin Controls</title>
+    <link rel="stylesheet" href="/stylesheet.css" type="text/css">
+  </head>
+  <body>
+  <h1>WELCOME TO ADMIN LAND!</h1> 
+  <h2>Update Account:</h2>
+    <form action="" method="post">
+      <input type="text" name="name" placeholder="Account name">
+      <input type="text" name="category" placeholder="Category" required><br>
+      <input type="text" name="date" placeholder="Enter Date MM/DD/YYYY"><br>
+      <input type="text" name="payee" placeholder="Payee" required><br>
+      <input type="text" name="amount" placeholder="$Amount" required><br>
+      <select name='transtype'>
+      <option value="in">Input</option>
+      <option value="out">Output</option>
+      </select>
+      <input type="submit" value="Submit">
+    </form>
+    <a href="/">Home</a>
+  </body>
+</html>

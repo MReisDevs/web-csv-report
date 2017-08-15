@@ -1,12 +1,9 @@
 require "csv"
 
-def run_csv_processor
-
 accounts = {}
 
-
+def run_csv_processor
 CSV.foreach("accounts.csv", {headers: true, return_headers: false}) do |row|
-
   # Add a key for each account to the accounts Hash.
   account = row["Account"].chomp
 
@@ -47,23 +44,21 @@ CSV.foreach("accounts.csv", {headers: true, return_headers: false}) do |row|
   current_account[:categories][category][:num_transactions] += 1
 
   # Update average transaction cost.
-  current_account[:categories][category][:average_transaction_cost] = current_account[:categories][category][:tally] / current_account[:categories][category][:num_transactions] 
+  current_account[:categories][category][:average_transaction_cost] = current_account[:categories][category][:tally] / current_account[:categories][category][:num_transactions]  
+
+  end
 end
+#  Display
 
-return accounts
-
-end
-
-# Display
-#   accounts.each do |name, info|
-#     puts “\n”
-#     puts “======================================================================”
-#     puts “Account: #{name}... Balance: $#{info[:tally].round(2)}”
-#     puts “======================================================================”
-#     puts “Category                     | Total Spent | Average Transaction”
-#     puts “---------------------------- | ----------- | -------------------------”
-#     info[:categories].each do |category, c_info|
-#       print “#{category.ljust(28)} | $#{c_info[:tally].round(2).to_s.ljust(10)} | $#{c_info[:average_transaction_cost].round(2).to_s.ljust(20)}\n”
-#     end
-#     puts “\n”
-#   end
+#accounts.each do |name, info|
+#  puts "\n"
+#  puts "======================================================================"
+#  puts "Account: #{name}... Balance: $#{info[:tally].round(2)}"
+#  puts "======================================================================"
+#  puts "Category                     | Total Spent | Average Transaction"
+#  puts "---------------------------- | ----------- | -------------------------"
+#  info[:categories].each do |category, c_info|
+#    print "#{category.ljust(28)} | $#{c_info[:tally].round(2).to_s.ljust(10)} | $#{c_info[:average_transaction_cost].round(2).to_s.ljust(20)}\n"
+#  end
+#  puts "\n"
+#end
