@@ -1,8 +1,10 @@
 require "csv"
 
-accounts = {}
+
 
 def run_csv_processor
+ accounts = {} 
+  
 CSV.foreach("accounts.csv", {headers: true, return_headers: false}) do |row|
   # Add a key for each account to the accounts Hash.
   account = row["Account"].chomp
@@ -47,6 +49,7 @@ CSV.foreach("accounts.csv", {headers: true, return_headers: false}) do |row|
   current_account[:categories][category][:average_transaction_cost] = current_account[:categories][category][:tally] / current_account[:categories][category][:num_transactions]  
 
   end
+  return accounts
 end
 #  Display
 

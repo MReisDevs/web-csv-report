@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>CSV Report - Full Report</title>
-    <link rel="stylesheet" href="/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="/public/stylesheet.css" type="text/css">
   </head>
   <body>
   <a href="/">Home</a>
     <% accounts.each do |name, info| %>
     <table>
     <tr>
-      <th colspan="3">Account: <%= name %> Balance: $<%=info[:tally].round(2)%></th>
+      <th colspan="3">Account: <%= name %> <br> Balance: $<%=info[:tally].round(2)%></th>
     </tr>
     <tr>
       <th> Category </th>

@@ -53,6 +53,11 @@ post '/admin' do
   redirect to('/admin')
 end
 
+get '/logout' do
+  session[:user] = nil
+  redirect to('/login')
+end
+
 
 
 helpers do
